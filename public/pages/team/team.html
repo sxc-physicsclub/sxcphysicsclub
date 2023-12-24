@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-81WHXYX98X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-81WHXYX98X');
+</script>
+
+<script type="module">
+  import { initializeTabs } from '/js/functions.js';
+  document.addEventListener("DOMContentLoaded", function () {
+  // initializeTabs("active", { tab: "2023", contentClass: "yr_2023" }, { tab: "2022", contentClass: "yr_2022" });
+  // In the above way the yearly tabs of teams is initialized
+  initializeTabs("active", { tab: "2023", contentClass: "yr_2023" });
+  });
+</script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <title>Teams | Physics Club SXC</title>
+    <!-- For css -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="team.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="/css/tabs.css">
+    </head>
+<body>
+    <!-- Header style -->
+    <style>
+			header { margin: 0; font-family: "Montserrat" ; color: #444444; }
+      #particles-js { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; z-index: -1; opacity: .9; }
+      .canvas { display: block; }
+      header a { text-decoration: none; color: inherit; }
+		  		header h1 { font-family: 'Lato'; font-size: 2.5rem }
+		  header i { font-size: 3rem; }
+      header .colored { color: #e7f1fd; }
+      .brand { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; position: relative; color: #444444; text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 1px -2px 1px rgba(255,255,255,0.3); }
+      .brand-logo img { width: 130px; height: 130px; border-radius: 50%; box-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px 0px 9px rgba(255,255,255,0.3); }
+      .brand-heading:nth-child(2) { text-align: center; }
+ 
+      .nav-burger { display: none; }
+      .nav-burger.is-active, .nav-cancel.is-active { display: block; cursor: pointer; }
+      .nav-cancel { z-index: 100; position: absolute; top: 30px; right: 30px; cursor: pointer; }
+      .nav-icon { padding: 5px 5px; }
+      /*    Nav links        */
+      .nav { background-color: #444444; display: none; position: absolute; top: 0; left: 0; width: 100%; padding: 90px 30px 90px 30px; z-index: 90; }
+      .nav.is-active { display: inline-block; position: fixed; width: auto; height: 100vh; }
+      .nav.is-active .nav-link { font-size: 2.7rem; text-align: center; }
+      .nav.is-active .nav-link:hover { text-decoration: line-through; background-color: inherit; color: #e7f1fd; }
+      .nav-link { font-family: 'Lato'; text-decoration: none; display: inline-block; padding: 0 10px; margin-bottom: 15px; font-weight: 900; font-size: 1.2rem; width: 100%; border-radius: 20px; padding: 7px 15px; color: #e7f1fd; }
+      .nav-link:hover { background-color: #e7f1fd; color: #444444; }
+      @media (min-width: 768px) { header h1 { font-size: 4rem; } .nav-burger.is-active, .nav-cancel { display: none; } .nav { display: inline-block; position: static; text-align: center; padding: 10px 0px; } .nav-link { display: inline-block; margin-bottom: 0; margin-right: 10px; width: auto; } .nav-link:nth-child(7) { margin-right: 0; } .nav-link:hover { background-color: #ffdeeb; } .nav.is-active { display: block; } .for-moto { flex-direction: row !important; column-gap: 120px; } .brand-heading:nth-child(2) { text-align: left; } .brand-logo img { margin-right: -70px; } }
+      @media (max-width: 917px) and (min-width: 768px) { header h1 { font-size: 3rem; } }
+      .for-moto { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; }
+      /* Helper classes  */
+      .is-hidden { display: none; }
+	  </style>
+	  <!-- Style ends -->
+	  <!-- Header -->
+	  <header class="header">
+		<div class="brand">
+		  <div id="particles-js"></div>
+		<div id="nav-burger" class="nav-burger is-active">
+		  <i class='bx bx-menu'></i>
+		</div>
+		<div class="for-moto">
+		  <a href="/" class="brand-logo">
+			<img src="/img/sxpc.jpg" alt="Logo">
+		  </a>
+		<div class="brand-heading">
+		  <h1 style="font-weight: 900;">SXC <span class="colored">Physics</span> Club</h1>
+		  <h3 style="font-size: 1.3rem">Physics is <span class="colored">fun</span>.</h3>
+		</div>
+		</div>
+		  <div class="something-here">
+			<i class='bx bxs-rocket'></i>
+		  </div>
+		</div>
+	  <!-- Burger nav  -->
+		<nav id="nav" class="nav">
+		  <div id="nav-cancel" class="nav-cancel">
+			<i class='bx bx-x-circle' style="color: #e7f1fd;"></i>
+		  </div>
+		  <a href="/" class="nav-link">Home</a>
+		  <a href="/pages/team/team.html" class="nav-link">Team</a>
+		  <a href="/pages/timeline/timeline.html" class="nav-link">Timeline</a>
+		  <a href="/pages/committee/committee.html" class="nav-link">Committees</a>
+		  <a href="/pages/resources/resources.html" class="nav-link">Resources</a>
+		  <a href="/pages/contact/contact.html" class="nav-link">Contact</a>
+		</nav>
+	  <!-- Burger nav end -->
+	  </header>
+	  <!-- Header end -->
+
+    <!-- Mentor Section -->
+
+    <section class="page-title">
+        <h1>Our <span class="colored">Team</span></h1>
+    </section>
+
+    <section id="team">
+    <section class="mentors team">
+        <section class="section-title title-card">
+            <h2>Our Mentors</h2>
+        </section>
+            <div class="flexed">
+                <!-- Mentor -->
+                <div class="row flex-width">
+                    <div class="card">
+                        <img src="/img/executives/yagya-phuyal.jpg" alt="pic" srcset="" style="object-position: top right">
+                        <h2 style="display: block;">Yagya Phuyal</h2>
+                    <ul class="social">
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <!-- Mentor -->
+                <div class="row flex-width">
+                    <div class="card">
+                        <img src="/img/executives/hari-kishor-sah.jpg" alt="pic" srcset="" style="object-position: 0px -5px">
+                        <h2 style="display: block;">Hari Kishor Sah</h2>
+                    <ul class="social">
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+    </section>
+
+    <!-- Execitive Section -->
+
+    <section class="executives team">
+        <section class="section-title title-card">
+            <h2>Our Executives</h2>
+        </section>
+
+        <div class="wrapper">
+
+        <div class="tabs_wrap">
+          <ul>
+            <!-- <li data-tabs="2024" style="padding: 10px 13px; width: 90px;">2024</li> -->
+            <!-- New <li> is to be created as same the below with different names and pics only -->
+            <li data-tabs="2023"  class="active" style="padding: 10px 13px; width: 90px;">2023</li>
+          </ul>
+        </div>
+
+        <li class="item_wrap yr_2023">
+            <div class="flexed" style="margin-top: 20px;">
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/chetna-sharma.jpeg" alt="picture" width="120" height="120" style="object-position: -80px 0px;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>President</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Chetna Sharma</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/shubi-pokhrel.jpg" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>Vice President</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Shubi Pokhrel</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/aashrat-parajuli.jpg" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>Vice President</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Aashrat Parajuli</h2>
+                    </div>                    
+                    <ul class="social">
+                      <li class="social-icon">
+                        <a href="https://www.facebook.com/aashrat.parajuli.1" title="Facebook" target="_blank" class="inline-block"><i class='bx bxl-facebook-circle' ></i></a>
+
+                      </li>
+                      <li class="social-icon">
+                        <a href="https://www.linkedin.com/in/aashrat/" title="Linkedin" target="_blank" class="inline-block"><i class='bx bxl-linkedin-square'></i></a>
+
+                      </li>
+                      <li class="social-icon">
+                        <a href="https://www.instagram.com/__couthaashrat/" title="Instagram" target="_blank" class="inline-block"><i class='bx bxl-instagram' ></i></a>
+
+                      </li>
+                  </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/anuj-bk.jpg" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>Secretary</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Anuj Bishwokarma</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/eric-bastola.jpg" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>Secretary</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Eric Bastola</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/prakriti-subedi.jpeg" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>Treasurer</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Prakriti Subedi</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/dipesh-bhusal.jpg" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>Treasurer</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Dipesh Bhusal</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/bimarsha-gyawali.jpg" alt="picture" width="120" height="120" style="object-position: -30px 0px;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>Event Manager</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Bimarsha Gyawali</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/ayushka-dhakal.JPG" alt="picture" width="120" height="120" style="object-position: -30px 0px;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>Event Manager</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Ayushka Dhakal</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/nimesh-sitoula.png" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>PR Officer</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Nimesh Sitoula</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/aayusha-gautam.jpg" alt="picture" width="120" height="120" style="object-position: 0px -50px;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>PR Officer</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Aayusha Gautam</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/bibek-shrestha.jpg" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>HR Manager</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Bibek Shrestha</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/aseem-sharma.png" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>HR Manager</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Aseem Sharma</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/ashmin-rijal.jpg" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>Editor</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Ashmin Rijal</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                                                                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/ayush-gautam.jpg" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>Prorector</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Ayush Gautam</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                                <!-- Executive -->
+                                <div class="row flex-width">
+                                    <div class="img-container">
+                                        <img src="/img/executives/aryan-adhikari.jpg" alt="picture" width="120" height="120" style="object-position: top right;">
+                                    </div>
+                                    <div class="executive-post">
+                                        <h3>Spokesperson</h3>
+                                        </div>
+                                    <div class="executive-name">
+                                    <h2 style="display: block;">Aryan Adhikari</h2>
+                                    </div>                    
+                                    <ul class="social">
+                                        <li class="social-icon">
+                                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                
+                                        </li>
+                                        <li class="social-icon">
+                                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                
+                                        </li>
+                                        <li class="social-icon">
+                                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                
+                                        </li>
+                                    </ul>
+                                </div>
+                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/keshav-kumar-shah.jpeg" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>Social Media Manager</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Keshav Kumar Sah</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                                <!-- Executive -->
+                                <div class="row flex-width">
+                                    <div class="img-container">
+                                        <img src="/img/executives/prem-kumar-yadav.jpg" alt="picture" width="120" height="120" style="object-position: 0px -100px;">
+                                    </div>
+                                    <div class="executive-post">
+                                        <h3>Graphic Designer</h3>
+                                        </div>
+                                    <div class="executive-name">
+                                    <h2 style="display: block;">Prem Yadav</h2>
+                                    </div>                    
+                                    <ul class="social">
+                                        <li class="social-icon">
+                                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                
+                                        </li>
+                                        <li class="social-icon">
+                                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                
+                                        </li>
+                                        <li class="social-icon">
+                                          <a href="" class="inline-block"><i class='bx bx-globe'></i></a>
+                
+                                        </li>
+                                    </ul>
+                                </div>
+                                                <!-- Executive -->
+                <div class="row flex-width">
+                    <div class="img-container">
+                        <img src="/img/executives/arjun-neupane.jpg" alt="picture" width="120" height="120" style="object-position: top right;">
+                    </div>
+                    <div class="executive-post">
+                        <h3>IT Head</h3>
+                        </div>
+                    <div class="executive-name">
+                    <h2 style="display: block;">Arjun Neupane</h2>
+                    </div>                    
+                    <ul class="social">
+                        <li class="social-icon">
+                          <a href="https://www.facebook.com/thearjunneupane" title="Facebook" target="_blank" class="inline-block"><i class='bx bxl-facebook-circle' ></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="https://np.linkedin.com/in/thearjunneupane" title="Linkedin" target="_blank" class="inline-block"><i class='bx bxl-linkedin-square'></i></a>
+
+                        </li>
+                        <li class="social-icon">
+                          <a href="https://github.com/thearjunneupane" title="Github" target="_blank" class="inline-block"><i class='bx bxl-github' ></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+          </li>
+        </div>
+    </section>
+    </section>
+    
+<!-- Footer -->
+<footer class="footer-distributed">
+	<div class="footer-right">
+	  <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+	  <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+	  <a href="#"><i class='bx bx-globe' ></i></a>
+	</div>
+	<div class="footer-left">
+	  <p class="footer-links">
+		<a class="link-1" href="/index.html">Home</a>
+		<a href="/pages/team/team.html">Team</a>
+		<a href="/pages/timeline/timeline.html">Timeline</a>
+		<a href="/pages/resources/resources.html">Resources</a>
+		<a href="/pages/contact/contact.html">Contact</a>
+	  </p>
+	  <p>&copy; 2015 Physics Club SXC, Maitighar</p>
+	  <p>Designed by Arjun Neupane</p>
+	</div>
+  </footer>
+<!-- Footer Styles -->
+<style>
+	.footer-distributed { background-color: #111111; box-sizing: border-box; width: 100%; text-align: left; font: normal 16px 'Montserrat'; padding: 25px 50px; }
+	.footer-distributed .footer-left p { color: #888; font-size: 14px; margin: 0; }
+	/* Footer links */
+	.footer-distributed p.footer-links { font-size: 18px; font-weight: bold; color: #ffffff; margin: 0 0 10px; padding: 0; transition: ease .25s; }
+	.footer-distributed p.footer-links a { display: inline-block; line-height: 1.8; text-decoration: none; color: #333333; font-family: 'Lato'; font-weight: 700; transition: ease .25s; }
+	.footer-distributed .footer-links a:before { content: "·"; font-size: 20px; left: 0; color: #e7f1fd; display: inline-block; padding: 0 10px; }
+	.footer-distributed .footer-links .link-1:before { content: none; }
+	.footer-distributed .footer-right { display: flex; float: right; margin-top: 6px; max-width: 180px; }
+	.footer-distributed .footer-right a { background-color: none; font-size: 40px; color: #333333; text-align: center; line-height: 35px; margin-left: 10px; transition:all .25s; }
+	.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1); color: #e7f1fd;}
+	.footer-distributed p.footer-links a:hover{text-decoration:underline; color: #e7f1fd;}
+	/* Media Queries */
+	@media (max-width: 600px) { .footer-distributed .footer-left, .footer-distributed .footer-right { text-align: center; } .footer-distributed .footer-right { float: none; margin: 0 auto 20px; } .footer-distributed .footer-left p.footer-links { line-height: 1.8; } }
+</style>
+<!-- Footers style End -->
+  <!-- Footer end -->
+	  <!-- Scripts -->
+	  <script src="/js/particles.js"></script>
+	  <script src="/js/custom.js"></script>
+	  <!-- Scripts end -->
+</body>
+</html>

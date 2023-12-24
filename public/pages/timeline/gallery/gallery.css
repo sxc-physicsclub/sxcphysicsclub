@@ -1,0 +1,165 @@
+ 	/* The INITIAL */
+
+:root {
+  --half-background: #f6f9fe;
+  --hover-color: #e7f1fd;
+  --contrast-color: #333333;
+  --font-color-black: #111111;
+  --font-page-title: 3rem;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ul, li {
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+  }
+
+  .colored {
+    color: #444444;
+  }
+
+ body {
+    line-height: 1.4;
+    font-family: "Montserrat" ;
+    color: var(--font-color-black);
+  }
+
+h1, h2, h3 {
+    font-family: "Lato";
+  }
+
+  #gallery {
+    padding-bottom: 10px;
+  }
+
+  /* The Page title */
+
+.page-title {
+    font-family: "Lato";
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .page-title h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+
+
+  .page-title h1::after {
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  background-image: linear-gradient(to right,rgb(255 255 255 / 0),var(--contrast-color),rgba(0,0,0,0));
+  content: "";
+  height: 3px;
+  width: 100%;
+}
+
+ /* The pictures container  */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin-top: 20px;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 30px;
+}
+
+	/* Last Button */
+.others-button {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0 70px 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.container .btn{
+  background: var(--hover-color);
+  width: fit-content;
+  padding: 5px 20px ;
+  border-radius: 50px;
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: -1px;
+  animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-25deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-25deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+
+@media (max-width: 800px){
+    .container .box{
+   flex-direction: column !important;
+  }
+
+.container .box .dream{
+  width: 100% !important;
+}
+}

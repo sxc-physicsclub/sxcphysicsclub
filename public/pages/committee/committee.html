@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Head -->
+  <head>
+	
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-81WHXYX98X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-81WHXYX98X');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SXCPC</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="committee.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+	
+  </head>
+	<!-- Head end -->
+	<!-- Body -->
+  <body>
+	<!-- Header style -->
+    <style>
+		header { margin: 0; font-family: "Montserrat" ; color: #444444; }
+      #particles-js { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; z-index: -1; opacity: .9; }
+      .canvas { display: block; }
+      header a { text-decoration: none; color: inherit; }
+		  		header h1 { font-family: 'Lato'; font-size: 2.5rem }
+		  header i { font-size: 3rem; }
+      header .colored { color: #e7f1fd; }
+      .brand { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; position: relative; color: #444444; text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 1px -2px 1px rgba(255,255,255,0.3); }
+      .brand-logo img { width: 130px; height: 130px; border-radius: 50%; box-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px 0px 9px rgba(255,255,255,0.3); }
+      .brand-heading:nth-child(2) { text-align: center; }
+ 
+      .nav-burger { display: none; }
+      .nav-burger.is-active, .nav-cancel.is-active { display: block; cursor: pointer; }
+      .nav-cancel { z-index: 100; position: absolute; top: 30px; right: 30px; cursor: pointer; }
+      .nav-icon { padding: 5px 5px; }
+      /*    Nav links        */
+      .nav { background-color: #444444; display: none; position: absolute; top: 0; left: 0; width: 100%; padding: 90px 30px 90px 30px; z-index: 90; }
+      .nav.is-active { display: inline-block; position: fixed; width: auto; height: 100vh; }
+      .nav.is-active .nav-link { font-size: 2.7rem; text-align: center; }
+      .nav.is-active .nav-link:hover { text-decoration: line-through; background-color: inherit; color: #e7f1fd; }
+      .nav-link { font-family: 'Lato'; text-decoration: none; display: inline-block; padding: 0 10px; margin-bottom: 15px; font-weight: 900; font-size: 1.2rem; width: 100%; border-radius: 20px; padding: 7px 15px; color: #e7f1fd; }
+      .nav-link:hover { background-color: #e7f1fd; color: #444444; }
+      @media (min-width: 768px) { header h1 { font-size: 4rem; } .nav-burger.is-active, .nav-cancel { display: none; } .nav { display: inline-block; position: static; text-align: center; padding: 10px 0px; } .nav-link { display: inline-block; margin-bottom: 0; margin-right: 10px; width: auto; } .nav-link:nth-child(7) { margin-right: 0; } .nav-link:hover { background-color: #ffdeeb; } .nav.is-active { display: block; } .for-moto { flex-direction: row !important; column-gap: 120px; } .brand-heading:nth-child(2) { text-align: left; } .brand-logo img { margin-right: -70px; } }
+      @media (max-width: 917px) and (min-width: 768px) { header h1 { font-size: 3rem; } }
+      .for-moto { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; }
+      /* Helper classes  */
+      .is-hidden { display: none; }
+	  </style>
+	  <!-- Style ends -->
+	  <!-- Header -->
+	  <header class="header">
+		<div class="brand">
+		  <div id="particles-js"></div>
+		<div id="nav-burger" class="nav-burger is-active">
+		  <i class='bx bx-menu'></i>
+		</div>
+		<div class="for-moto">
+		  <a href="/" class="brand-logo">
+			<img src="/img/sxpc.jpg" alt="Logo">
+		  </a>
+		<div class="brand-heading">
+		  <h1 style="font-weight: 900;">SXC <span class="colored">Physics</span> Club</h1>
+		  <h3 style="font-size: 1.3rem">Physics is <span class="colored">fun</span>.</h3>
+		</div>
+		</div>
+		  <div class="something-here">
+			<i class='bx bxs-rocket'></i>
+		  </div>
+		</div>
+	  <!-- Burger nav  -->
+		<nav id="nav" class="nav">
+		  <div id="nav-cancel" class="nav-cancel">
+			<i class='bx bx-x-circle' style="color: #e7f1fd;"></i>
+		  </div>
+		  <a href="/" class="nav-link">Home</a>
+		  <a href="/pages/team/team.html" class="nav-link">Team</a>
+		  <a href="/pages/timeline/timeline.html" class="nav-link">Timeline</a>
+		  <a href="/pages/committee/committee.html" class="nav-link">Committees</a>
+		  <a href="/pages/resources/resources.html" class="nav-link">Resources</a>
+		  <a href="/pages/contact/contact.html" class="nav-link">Contact</a>
+		</nav>
+	  <!-- Burger nav end -->
+	  </header>
+	  <!-- Header end -->
+	
+      <section class="page-title">
+        <h1>Club's <span class="colored">Committees</span></h1>
+    </section>
+
+	<section id="committee">
+		<div class="description">
+			<p>
+				We have committees arranged. There are total 9 committes. All committes do their work and are responsible. Do services seperately.
+			</p>
+		</div>
+		<div class="committee-container">
+		<div class="flexed">
+			<div class="row flex-width">
+				<a href="#" data-toggle="modal" data-target="#exampleModalCenter-1">
+					<div class="committee-list">
+					<i class='bx bx-desktop' style="font-size: 5rem; margin-bottom: 20px; color: #333333;"></i>
+					<h2 style="display: block;">IT Committee</h2>
+					<p>
+						Manages and maintains the club's website, online resources, and technical aspects.
+					</p>
+					<div class="service-enter">
+					<span>View Services <i class='bx bx-right-arrow-alt' style="font-size: 2rem; vertical-align: middle; color: #333333;" ></i></span>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<div class="row flex-width">
+				<a href="#" data-toggle="modal" data-target="#exampleModalCenter-2">
+				<div class="committee-list">
+					<i class='bx bxs-file-find' style="font-size: 5rem; margin-bottom: 20px; color: #333333;"></i>
+					<h2 style="display: block;">Research Committee</h2>
+					<p>
+						Coordinates and facilitates research activities, projects, and QOM.
+					</p>
+					<div class="service-enter">
+					<span>View Services <i class='bx bx-right-arrow-alt' style="font-size: 2rem; vertical-align: middle; color: #333333;" ></i></span>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<div class="row flex-width">
+				<a href="#" data-toggle="modal" data-target="#exampleModalCenter-3">
+					<div class="committee-list">
+					<i class='bx bx-line-chart' style="font-size: 5rem; margin-bottom: 20px; color: #333333;"></i>
+					<h2 style="display: block;">Marketing Committee</h2>
+					<p>
+						Develops and implements marketing strategies to promote the Physics Club's events
+					</p>
+					<div class="service-enter">
+					<span>View Services <i class='bx bx-right-arrow-alt' style="font-size: 2rem; vertical-align: middle; color: #333333;" ></i></span>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<div class="row flex-width">
+				<a href="#" data-toggle="modal" data-target="#exampleModalCenter-4">
+					<div class="committee-list">
+					<i class='bx bxs-group' style="font-size: 5rem; margin-bottom: 20px; color: #333333;"></i>
+					<h2 style="display: block;">HR Committee</h2>
+					<p>
+						Handles member recruitment, engagement, and retention, creating a supportive environment.
+					</p>
+					<div class="service-enter">
+					<span>View Services <i class='bx bx-right-arrow-alt' style="font-size: 2rem; vertical-align: middle; color: #333333;" ></i></span>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<div class="row flex-width">
+				<a href="#" data-toggle="modal" data-target="#exampleModalCenter-5">
+					<div class="committee-list">
+					<i class='bx bxs-user-voice' style="font-size: 5rem; margin-bottom: 20px; color: #333333;"></i>
+					<h2 style="display: block;">Communication Committee</h2>
+					<p>
+						Ensures effective communication within the club, disseminating information about updates.
+					</p>
+					<div class="service-enter">
+					<span>View Services <i class='bx bx-right-arrow-alt' style="font-size: 2rem; vertical-align: middle; color: #333333;" ></i></span>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<div class="row flex-width">
+				<a href="#" data-toggle="modal" data-target="#exampleModalCenter-6">
+					<div class="committee-list">
+					<i class='bx bxs-like' style="font-size: 5rem; margin-bottom: 20px; color: #333333;"></i>
+					<h2 style="display: block;">Public Relation Committee</h2>
+					<p>
+						Manages the club's image and reputation, fostering positive relationships with external entities.
+					</p>
+					<div class="service-enter">
+					<span>View Services <i class='bx bx-right-arrow-alt' style="font-size: 2rem; vertical-align: middle; color: #333333;" ></i></span>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<div class="row flex-width">
+				<a href="#" data-toggle="modal" data-target="#exampleModalCenter-7">
+					<div class="committee-list">
+					<i class='bx bxs-donate-heart' style="font-size: 5rem; margin-bottom: 20px; color: #333333;"></i>
+					<h2 style="display: block;">Club Service Committee</h2>
+					<p>
+						Organizes community service initiatives, leveraging physics-related skills and knowledge.
+					<div class="service-enter">
+					<span>View Services <i class='bx bx-right-arrow-alt' style="font-size: 2rem; vertical-align: middle; color: #333333;" ></i></span>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<div class="row flex-width">
+				<a href="#" data-toggle="modal" data-target="#exampleModalCenter-8">
+					<div class="committee-list">
+					<i class='bx bx-shape-polygon' style="font-size: 5rem; margin-bottom: 20px; color: #333333;"></i>
+					<h2 style="display: block;">Event Managing Committee</h2>
+					<p>
+						Plans and executes various events and activities organized by the club.
+					</p>
+					<div class="service-enter">
+					<span>View Services <i class='bx bx-right-arrow-alt' style="font-size: 2rem; vertical-align: middle; color: #333333;" ></i></span>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<div class="row flex-width">
+				<a href="#" data-toggle="modal" data-target="#exampleModalCenter-9">
+					<div class="committee-list">
+					<i class='bx bx-file' style="font-size: 5rem; margin-bottom: 20px; color: #333333;"></i>
+					<h2 style="display: block;">Editorial Board</h2>
+					<p>
+						Oversees the club's publications, including newsletters or journals, curating and reviewing content.
+					<div class="service-enter">
+					<span>View Services <i class='bx bx-right-arrow-alt' style="font-size: 2rem; vertical-align: middle; color: #333333;" ></i></span>
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	 <!-- ALL modals -->
+                  <!-- modal 1-->
+				  <div class="modal fade" id="exampleModalCenter-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLongTitle">IT Committee</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class='bx bx-x-circle' ></i></span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<!-- <section class="section-title">
+								<h2>IT Comm. Services</h2>
+							</section>
+							<div class="service-list">
+								<ul style="list-style: disc;">
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+								</ul>
+							</div> -->
+							<section class="section-title">
+								<h2>IT Comm. Members</h2>
+							</section>
+							<div class="member-list">
+								<!-- <ul style="list-style: none; padding-left: 12px;">
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane <span class="colored">(IT Head)</span></li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+								</ul> -->
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-1" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- modal 1 end -->
+							<!-- modal 2 -->
+				  <div class="modal fade" id="exampleModalCenter-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLongTitle">Research Committee</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class='bx bx-x-circle' ></i></span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<!-- <section class="section-title">
+								<h2>Research Comm. Services</h2>
+							</section>
+							<div class="service-list">
+								<ul style="list-style: disc;">
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+								</ul>
+							</div> -->
+							<section class="section-title">
+								<h2>Research Comm. Members</h2>
+							</section>
+							<div class="member-list">
+								<!-- <ul style="list-style: none; padding-left: 12px;">
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane <span class="colored">(IT Head)</span></li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+								</ul> -->
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-1" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- modal 2 end -->
+							<!-- modal 3 -->
+				  <div class="modal fade" id="exampleModalCenter-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLongTitle">Marketing Committee</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class='bx bx-x-circle' ></i></span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<!-- <section class="section-title">
+								<h2>Marketing Comm. Services</h2>
+							</section>
+							<div class="service-list">
+								<ul style="list-style: disc;">
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+								</ul>
+							</div> -->
+							<section class="section-title">
+								<h2>Marketing Comm. Members</h2>
+							</section>
+							<div class="member-list">
+								<!-- <ul style="list-style: none; padding-left: 12px;">
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane <span class="colored">(IT Head)</span></li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+								</ul> -->
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-1" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- modal 3 end -->
+				  			<!-- modal 4 -->
+					<div class="modal fade" id="exampleModalCenter-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLongTitle">Human Resource Committee</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class='bx bx-x-circle' ></i></span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<!-- <section class="section-title">
+								<h2>HR Comm. Services</h2>
+							</section>
+							<div class="service-list">
+								<ul style="list-style: disc;">
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+								</ul>
+							</div> -->
+							<section class="section-title">
+								<h2>HR Comm. Members</h2>
+							</section>
+							<div class="member-list">
+								<!-- <ul style="list-style: none; padding-left: 12px;">
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane <span class="colored">(IT Head)</span></li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+								</ul> -->
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-1" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- modal 4 end -->
+							<!-- modal 5 -->
+					<div class="modal fade" id="exampleModalCenter-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLongTitle">Communicatiom Committee</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class='bx bx-x-circle' ></i></span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<!-- <section class="section-title">
+								<h2>Communication Comm. Services</h2>
+							</section>
+							<div class="service-list">
+								<ul style="list-style: disc;">
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+								</ul>
+							</div> -->
+							<section class="section-title">
+								<h2>Communication Comm. Members</h2>
+							</section>
+							<div class="member-list">
+								<!-- <ul style="list-style: none; padding-left: 12px;">
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane <span class="colored">(IT Head)</span></li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+								</ul> -->
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-1" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- modal 5 end -->
+							<!-- modal 6 -->
+					<div class="modal fade" id="exampleModalCenter-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLongTitle">Public Relation Committee</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class='bx bx-x-circle' ></i></span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<!-- <section class="section-title">
+								<h2>PR Comm. Services</h2>
+							</section>
+							<div class="service-list">
+								<ul style="list-style: disc;">
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+								</ul>
+							</div> -->
+							<section class="section-title">
+								<h2>PR Comm. Members</h2>
+							</section>
+							<div class="member-list">
+								<!-- <ul style="list-style: none; padding-left: 12px;">
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane <span class="colored">(IT Head)</span></li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+								</ul> -->
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-1" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- modal 6 end -->
+							<!-- modal 7 -->
+					<div class="modal fade" id="exampleModalCenter-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLongTitle">Club Service Committee</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class='bx bx-x-circle' ></i></span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<!-- <section class="section-title">
+								<h2>Club Service Comm. Services</h2>
+							</section>
+							<div class="service-list">
+								<ul style="list-style: disc;">
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+								</ul>
+							</div> -->
+							<section class="section-title">
+								<h2>Club Service Comm. Members</h2>
+							</section>
+							<div class="member-list">
+								<!-- <ul style="list-style: none; padding-left: 12px;">
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane <span class="colored">(IT Head)</span></li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+								</ul> -->
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-1" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- modal 7 end -->
+							<!-- modal 8 -->
+					<div class="modal fade" id="exampleModalCenter-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLongTitle">Event Managing Committee</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class='bx bx-x-circle' ></i></span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<!-- <section class="section-title">
+								<h2>Event Managing Comm. Services</h2>
+							</section>
+							<div class="service-list">
+								<ul style="list-style: disc;">
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+								</ul>
+							</div> -->
+							<section class="section-title">
+								<h2>Event Managing Comm. Members</h2>
+							</section>
+							<div class="member-list">
+								<!-- <ul style="list-style: none; padding-left: 12px;">
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane <span class="colored">(IT Head)</span></li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+								</ul> -->
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-1" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- modal 8 end -->
+							<!-- modal 9 -->
+					<div class="modal fade" id="exampleModalCenter-9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLongTitle">Editorial Board</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class='bx bx-x-circle' ></i></span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<!-- <section class="section-title">
+								<h2>Editorial Board Services</h2>
+							</section>
+							<div class="service-list">
+								<ul style="list-style: disc;">
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+									<li>some services ar being able to be iincluded here and so i guess to write a nothing here.</li>
+								</ul>
+							</div> -->
+							<section class="section-title">
+								<h2>Editorial Board Members</h2>
+							</section>
+							<div class="member-list">
+								<!-- <ul style="list-style: none; padding-left: 12px;">
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane <span class="colored">(IT Head)</span></li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+									<li><i class='bx bx-subdirectory-right'></i>Arjun Neupane </li>
+								</ul> -->
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-1" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- modal 9 end -->
+
+				  <!-- All modals end -->
+
+
+<!-- Footer -->
+<footer class="footer-distributed">
+	<div class="footer-right">
+	  <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+	  <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+	  <a href="#"><i class='bx bx-globe' ></i></a>
+	</div>
+	<div class="footer-left">
+	  <p class="footer-links">
+		<a class="link-1" href="/index.html">Home</a>
+		<a href="/pages/team/team.html">Team</a>
+		<a href="/pages/timeline/timeline.html">Timeline</a>
+		<a href="/pages/resources/resources.html">Resources</a>
+		<a href="/pages/contact/contact.html">Contact</a>
+	  </p>
+	  <p>&copy; 2015 Physics Club SXC, Maitighar</p>
+	  <p>Designed by Arjun Neupane</p>
+	</div>
+  </footer>
+<!-- Footer Styles -->
+<style>
+	.footer-distributed { background-color: var(--font-color-black); box-sizing: border-box; width: 100%; text-align: left; font: normal 16px 'Montserrat'; padding: 25px 50px; }
+	.footer-distributed .footer-left p { color: #888; font-size: 14px; margin: 0; }
+	/* Footer links */
+	.footer-distributed p.footer-links { font-size: 18px; font-weight: bold; color: #ffffff; margin: 0 0 10px; padding: 0; transition: ease .25s; }
+	.footer-distributed p.footer-links a { display: inline-block; line-height: 1.8; text-decoration: none; color: var(--contrast-color); font-family: 'Lato'; font-weight: 700; transition: ease .25s; }
+	.footer-distributed .footer-links a:before { content: "·"; font-size: 20px; left: 0; color: var(--hover-color); display: inline-block; padding: 0 10px; }
+	.footer-distributed .footer-links .link-1:before { content: none; }
+	.footer-distributed .footer-right { display: flex; float: right; margin-top: 6px; max-width: 180px; }
+	.footer-distributed .footer-right a { background-color: none; font-size: 40px; color: var(--contrast-color); text-align: center; line-height: 35px; margin-left: 10px; transition:all .25s; }
+	.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1); color: var(--hover-color);}
+	.footer-distributed p.footer-links a:hover{text-decoration:underline; color: var(--hover-color);}
+	/* Media Queries */
+	@media (max-width: 600px) { .footer-distributed .footer-left, .footer-distributed .footer-right { text-align: center; } .footer-distributed .footer-right { float: none; margin: 0 auto 20px; } .footer-distributed .footer-left p.footer-links { line-height: 1.8; } }
+</style>
+<!-- Footers style End -->
+  <!-- Footer end -->
+	  <!-- Scripts -->
+	  <script src="/js/particles.js"></script>
+	  <script src="/js/custom.js"></script>
+	  <script src="/js/bootstrap.bundle.min.js"></script>
+
+	  <!-- Scripts end -->
+  </body>
+  </html>
