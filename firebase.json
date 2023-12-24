@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "sxcphysicsclub"
     "public": "public",
     "ignore": [
       "firebase.json",
