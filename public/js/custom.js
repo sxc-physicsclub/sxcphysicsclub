@@ -117,18 +117,6 @@ $(document).ready(function() {
 
 
 
-// Preloader
-$(window).on("load", function () {
-  $(".preloader").fadeOut();
-});
-
-  // page scrolling
-  $.scrollIt({
-    topOffset: -50,
-  });
-
-
-
     // video popup
   const videoSrc = $("#player-1").attr("src");
   $(".video-play-btn,.video-popup").on("click", function () {
@@ -141,4 +129,14 @@ $(window).on("load", function () {
         $("#player-1").attr("src", videoSrc);
       }
     }
+  });
+
+  // Preloader
+$(window).on("load", function () {
+  $(".preloader").fadeOut();
+});
+
+  // page scrolling
+  $.scrollIt({
+    topOffset: -50,
   });
