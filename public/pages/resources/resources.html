@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>                                  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-81WHXYX98X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-81WHXYX98X');
-</script>
 
 <script type="module">
-  import { initializeTabs } from '/js/functions.js';
+  import { initializeTabs, initializeVideoPopup } from '/js/functions.js';
   document.addEventListener("DOMContentLoaded", function () {
   // In the below, new tabs if needed to be added can be added. Put it in the Wrap list and make a content first.
   initializeTabs("active", { tab: "QOM", contentClass: "QOM" }, { tab: "Videos", contentClass: "Videos" }, { tab: "Articles", contentClass: "Articles" });
+  initializeVideoPopup();
   });
 </script>
 
@@ -356,7 +349,6 @@
 
 	  <!-- Scripts -->
     <script src="/js/jquery.min.js"></script>
-    <!-- <script src="resources.js"></script> -->
 	  <script src="/js/particles.js"></script>
 	  <script src="/js/custom.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
